@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --nav-background: blue;
+    --nav-foreground: white;
+
+    --footer-background: darkblue;
+    --footer-foreground: cornsilk;
+
+    --page-background: oldlace;
+    --page-foreground: darkred;
+    --card-background: white;
+}
+
+body {
+    margin: 0;
+    background-color: var(--page-background);
+    color: var(--page-foreground);
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+header h1 {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+nav.navbar {
+    background-color: var(--nav-background);
+    color: var(--nav-foreground);
+    padding: 18px 24px;
+}
+
+nav.navbar .navbar-brand,
+nav.navbar .nav-link {
+    color: var(--nav-foreground);
+}
+
+nav.navbar a:hover,
+nav.navbar a:focus {
+    color: var(--button-background);
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main section {
+    background-color: var(--card-background);
+    padding: 28px;
+    margin-bottom: 32px;
+    border-radius: 12px;
+}
+
+x-markdown2html {
+    display: block;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+button,
+.button,
+nav.navbar .navbar-toggler {
+    background-color: var(--button-background);
+    color: var(--button-foreground);
+    border: 2px solid var(--button-foreground);
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button:hover,
+.button:hover {
+    background-color: var(--button-foreground);
+    color: var(--button-background);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+}
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-foreground);
+    text-align: center;
+    padding: 28px;
+}
+
+footer p {
+    margin: 0;
+}
